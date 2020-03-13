@@ -5,7 +5,7 @@ layout: page
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 <center><h1>Joyoung Han</h1></center>
 <center><h5>hjyoung001@gmail.com</h5></center>
-
+<br>
 
 <h2>Research Interests</h2>
 
@@ -14,7 +14,7 @@ layout: page
 	<li>VR Feedback Interfaces</li>
 	<li>Tactile Interfaces</li>
 </ul>
-
+<br>
 
 <h2>Teaching Experiences</h2>
 

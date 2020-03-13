@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
-<center><h1>Han JoYoung</h1></center>
+<center><h1>Joyoung Han</h1></center>
 <br>
 
 <h2>Research Interests</h2>

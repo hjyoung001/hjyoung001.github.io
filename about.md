@@ -17,7 +17,7 @@ layout: page
 
 <h2>Teaching Experiences</h2>
 
-<h4>Teaching Assistant</h4>
+<h3>Teaching Assistant</h3>
 
 <ul>
 	<li>2020 Spring, CS204 Discrete Mathematics, KAIST</li>

@@ -20,6 +20,15 @@
                 border-width: 1px 0;
                 box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026;
             }
+
+            .card-hover {
+                cursor: pointer;
+                transition: background-color 0.15s ease;
+            }
+
+            .card-hover:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
         </style>
     </head>
 
@@ -97,7 +106,7 @@
 
                     <p>LiveOps Engineer / Software Maintenance Engineer</p>
 
-                    <ul class="mt-2">
+                    <ul class="mt-2 mb-0">
                         <li>서비스 안정성 확보를 위한 장애 분석 및 실시간 대응</li>
                         <li>서버·클라이언트 전반의 코드 유지보수 및 품질 개선</li>
                         <li>라이브 환경에서 발생하는 요구사항을 반영한 기능 개발</li>
@@ -115,8 +124,8 @@
                     <div class="album p-3 bg-body-tertiary mt-4">
                         <div class="row row-cols-1 row-cols-md-2 g-3">
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 1">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-1">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 1">
                                     <div class="card-body">
                                         <h5 class="card-title">라이브 이슈 대응</h5>
                                         <p class="card-text">Description</p>
@@ -125,8 +134,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 2">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-2">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">서비스 코드 유지보수 및 개선</h5>
                                         <p class="card-text">Description</p>
@@ -135,8 +144,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 3">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-3">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 3">
                                     <div class="card-body">
                                         <h5 class="card-title">서버/클라이언트 개발</h5>
                                         <p class="card-text">Description</p>
@@ -145,8 +154,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 4">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-4">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 4">
                                     <div class="card-body">
                                         <h5 class="card-title">운영툴 개발 및 유지보수</h5>
                                         <p class="card-text">Description</p>
@@ -167,8 +176,8 @@
                     <div class="album p-3 bg-body-tertiary mt-4">
                         <div class="row row-cols-1 row-cols-md-2 g-3">
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 1">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-1">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 1">
                                     <div class="card-body">
                                         <h5 class="card-title">인게임 재화 분석툴</h5>
                                         <p class="card-text">Description</p>
@@ -177,8 +186,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 2">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-2">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 2">
                                     <div class="card-body">
                                         <h5 class="card-title">상품 효율 분석툴</h5>
                                         <p class="card-text">Description</p>
@@ -187,8 +196,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 3">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-3">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 3">
                                     <div class="card-body">
                                         <h5 class="card-title">버그 및 의견 제보</h5>
                                         <p class="card-text">Description</p>
@@ -197,8 +206,8 @@
                             </div>
 
                             <div class="col">
-                                <div class="card shadow-sm h-100">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Card Image 4">
+                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-4">
+                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 4">
                                     <div class="card-body">
                                         <h5 class="card-title">게임 분석</h5>
                                         <p class="card-text">Description</p>
@@ -230,7 +239,7 @@
 
                     <p>석사, 전산학부, HCI Lab</p>
 
-                    <ul>
+                    <ul class="mb-0">
                         <li class="mt-2">
                             Finding a More Pleasant Compliance Illusion Method for a Hand-Held Device<br>
                             <span class="text-muted">IEEE Access, 2021</span>
@@ -243,6 +252,206 @@
                 </section>
             </div>
         </main>
+
+        <div class="modal fade" id="role-modal-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">라이브 이슈 대응</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 1">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Role Modal 1 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="role-modal-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">서비스 코드 유지보수 및 개선</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 2">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Role Modal 2 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="role-modal-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">서버/클라이언트 개발</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 3">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Role Modal 3 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="role-modal-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">운영툴 개발 및 유지보수</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 4">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Role Modal 4 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="beyond-modal-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">인게임 재화 분석툴</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 1">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Beyond Modal 1 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="beyond-modal-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">상품 효율 분석툴</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 2">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Beyond Modal 2 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="beyond-modal-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">버그 및 의견 제보</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 3">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Beyond Modal 3 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="beyond-modal-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">게임 분석</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5">
+                                <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 4">
+                            </div>
+
+                            <div class="col-md-7">
+                                <p class="mb-0">
+                                    Beyond Modal 4 Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="assets/js/bootstrap.min.js"></script>
         <script>

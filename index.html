@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +8,16 @@
         <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
 
         <style>
-            section {
-                scroll-margin-top: 80px;
+            :root {
+                --navbar-height: 3.5rem;
             }
 
-            .section-divider {
-                width: 100%;
-                height: 2rem;
-                background-color: #0000001a;
-                border: solid rgba(0, 0, 0, .15);
-                border-width: 1px 0;
-                box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026;
+            html {
+                scroll-padding-top: var(--navbar-height);
+            }
+
+            body {
+                padding-top: var(--navbar-height);
             }
 
             .card-hover {
@@ -35,74 +34,74 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Joyoung Han</a>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Joyoung Han</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career">Career</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#role">Role</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#beyond">Beyond</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#career">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#role">Role</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#beyond">Beyond</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">Education</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </nav>
         </header>
 
         <main>
-            <div class="container py-5" style="margin-top: 60px;">
-                <div class="row align-items-center gy-5">
-                    <div class="col-md-4 text-center">
-                        <img src="assets/img/profile.jpg" class="img-fluid rounded-circle" alt="Profile Image">
-                    </div>
-
-                    <div class="col-md-8">
-                        <h2 class="fw-bold">Joyoung Han</h2>
-
-                        <p class="fs-5 text-muted mb-4">LiveOps Engineer / Software Maintenance Engineer</p>
-
-                        <p class="mb-4">
-                            Description
-                        </p>
-
-                        <div class="d-flex gap-2 align-items-center mb-2">
-                            <i class="bi bi-envelope-fill"></i>
-                            <span>hjyoung001@gmail.com</span>
+            <section id="about">
+                <div class="container px-3 py-3 py-lg-5">
+                    <div class="row align-items-center gy-5">
+                        <div class="col-12 col-lg-4 text-center">
+                            <img src="assets/img/profile.jpg" class="img-fluid rounded-circle" alt="Profile Image">
                         </div>
 
-                        <div class="d-flex gap-2 align-items-center">
-                            <i class="bi bi-telephone-fill"></i>
-                            <span>010-6770-0127</span>
+                        <div class="col-12 col-lg-8">
+                            <h2 class="fw-bold">Joyoung Han</h2>
+
+                            <p class="fs-5 text-muted mb-4">Software Engineer / LiveOps Engineer</p>
+
+                            <p class="mb-4">
+                                Description
+                            </p>
+
+                            <div class="mb-2">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span>hjyoung001@gmail.com</span>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-telephone-fill"></i>
+                                <span>010-6770-0127</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="section-divider"></div>
+            </section>
             
-            <div class="container py-5">
-                <section id="career">
+            <section id="career" class="bg-light">
+                <div class="container px-3 py-3 py-lg-5">
                     <h2 class="fw-bold mb-4">Career</h2>
 
                     <h4 class="mb-2">
-                        JOYCITY
+                        <span class="fw-bold">JOYCITY</span>
                         <span class="fs-6 text-muted">(2022.08 - Present)</span>
                     </h4>
 
-                    <p class="mb-3">LiveOps Engineer / Software Maintenance Engineer</p>
+                    <p class="mb-3">Software Engineer / LiveOps Engineer</p>
 
                     <ul class="mb-0">
                         <li>서비스 안정성 확보를 위한 장애 분석 및 실시간 대응</li>
@@ -110,128 +109,118 @@
                         <li>라이브 환경에서 발생하는 요구사항을 반영한 기능 개발</li>
                         <li>서비스 운영을 지원하는 내부 시스템·도구 개발 및 유지보수</li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="section-divider"></div>
-
-            <div class="container py-5">
-                <section id="role">
+            <section id="role">
+                <div class="container px-3 py-3 py-lg-5">
                     <h2 class="fw-bold mb-4">Role</h2>
 
-                    <div class="album p-3 bg-body-tertiary">
-                        <div class="row row-cols-1 row-cols-md-2 g-3">
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-1">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">라이브 이슈 대응</h5>
-                                        <p class="card-text">근본적인 원인을 고려한 이슈 분석</p>
-                                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 g-3 g-lg-4">
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-1">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 1">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">라이브 이슈 대응</h5>
+                                    <p class="card-text">근본적인 원인을 고려한 이슈 분석</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-2">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 2">
-                                    <div class="card-body">
-                                        <h5 class="card-title">서비스 코드 유지보수 및 개선</h5>
-                                        <p class="card-text">안정적 서비스와 지속 가능한 개발 지향</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-2">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">서비스 코드 유지보수 및 개선</h5>
+                                    <p class="card-text">안정적 서비스와 지속 가능한 개발 지향</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-3">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">서버/클라이언트 개발</h5>
-                                        <p class="card-text">명확한 의사소통 기반의 기능 구현</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-3">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">서버/클라이언트 개발</h5>
+                                    <p class="card-text">명확한 의사소통 기반의 기능 구현</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-4">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 4">
-                                    <div class="card-body">
-                                        <h5 class="card-title">운영툴 개발 및 유지보수</h5>
-                                        <p class="card-text">실사용자의 경험을 우선하는 설계</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#role-modal-4">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Role Card Image 4">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">운영툴 개발 및 유지보수</h5>
+                                    <p class="card-text">실사용자의 경험을 우선하는 설계</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="section-divider"></div>
-
-            <div class="container py-5">
-                <section id="beyond">
+            <section id="beyond" class="bg-light">
+                <div class="container px-3 py-3 py-lg-5">
                     <h2 class="fw-bold mb-4">Beyond</h2>
 
-                    <div class="album p-3 bg-body-tertiary">
-                        <div class="row row-cols-1 row-cols-md-2 g-3">
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-1">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 1">
-                                    <div class="card-body">
-                                        <h5 class="card-title">인게임 재화 흐름 분석 시스템</h5>
-                                        <p class="card-text">데이터 기반 의사결정 지원</p>
-                                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 g-3 g-lg-4">
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-1">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 1">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">인게임 재화 흐름 분석 시스템</h5>
+                                    <p class="card-text">데이터 기반 의사결정 지원</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-2">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 2">
-                                    <div class="card-body">
-                                        <h5 class="card-title">상품 효율 분석 시스템</h5>
-                                        <p class="card-text">상품 설계 및 검증을 위한 기준 제공</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-2">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">상품 효율 분석 시스템</h5>
+                                    <p class="card-text">상품 설계 및 검증을 위한 기준 제공</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-3">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">버그 및 의견 제보</h5>
-                                        <p class="card-text">서비스 품질 향상을 위한 주도적 개선 제안</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-3">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">버그 및 의견 제보</h5>
+                                    <p class="card-text">서비스 품질 향상을 위한 주도적 개선 제안</p>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col">
-                                <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-4">
-                                    <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 4">
-                                    <div class="card-body">
-                                        <h5 class="card-title">게임 분석</h5>
-                                        <p class="card-text">서비스 전반에 대한 깊이 있는 이해 추구</p>
-                                    </div>
+                        <div class="col">
+                            <div class="card card-hover shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#beyond-modal-4">
+                                <img class="card-img-top" src="assets/img/card_sample.jpg" alt="Beyond Card Image 4">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">게임 분석</h5>
+                                    <p class="card-text">서비스 전반에 대한 깊이 있는 이해 추구</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="section-divider"></div>
-
-            <div class="container py-5">
-                <section id="education">
+            <section id="education">
+                <div class="container px-3 py-3 py-lg-5">
                     <h2 class="fw-bold mb-4">Education</h2>
 
                     <h4>
-                        KAIST
+                        <span class="fw-bold">KAIST</span>
                         <span class="fs-6 text-muted">(2016.03 - 2020.02)</span>
                     </h4>
 
                     <p class="mb-4">학사, 전산학부</p>
 
                     <h4>
-                        KAIST
+                        <span class="fw-bold">KAIST</span>
                         <span class="fs-6 text-muted">(2020.03 - 2022.02)</span>
                     </h4>
 
@@ -247,25 +236,25 @@
                             <span class="text-muted">International Journal of Human-Computer Interaction, 2025</span>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
 
         <div class="modal fade" id="role-modal-1" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">라이브 이슈 대응</h5>
+                        <h5 class="modal-title fw-bold">라이브 이슈 대응</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 1">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Role Modal 1 Description
                                 </p>
@@ -280,17 +269,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">서비스 코드 유지보수 및 개선</h5>
+                        <h5 class="modal-title fw-bold">서비스 코드 유지보수 및 개선</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 2">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Role Modal 2 Description
                                 </p>
@@ -305,17 +294,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">서버/클라이언트 개발</h5>
+                        <h5 class="modal-title fw-bold">서버/클라이언트 개발</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 3">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Role Modal 3 Description
                                 </p>
@@ -330,17 +319,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">운영툴 개발 및 유지보수</h5>
+                        <h5 class="modal-title fw-bold">운영툴 개발 및 유지보수</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Role Modal Image 4">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Role Modal 4 Description
                                 </p>
@@ -355,17 +344,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">인게임 재화 분석툴</h5>
+                        <h5 class="modal-title fw-bold">인게임 재화 분석툴</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 1">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Beyond Modal 1 Description
                                 </p>
@@ -380,17 +369,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">상품 효율 분석툴</h5>
+                        <h5 class="modal-title fw-bold">상품 효율 분석툴</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 2">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Beyond Modal 2 Description
                                 </p>
@@ -405,17 +394,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">버그 및 의견 제보</h5>
+                        <h5 class="modal-title fw-bold">버그 및 의견 제보</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 3">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Beyond Modal 3 Description
                                 </p>
@@ -430,17 +419,17 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">게임 분석</h5>
+                        <h5 class="modal-title fw-bold">게임 분석</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
                         <div class="row align-items-center g-4">
-                            <div class="col-md-5">
+                            <div class="col-lg-5">
                                 <img class="w-100 rounded" src="assets/img/card_sample.jpg" alt="Beyond Modal Image 4">
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-lg-7">
                                 <p class="mb-0">
                                     Beyond Modal 4 Description
                                 </p>
@@ -456,8 +445,9 @@
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     const navbar = document.querySelector('.navbar-collapse');
-                    const collapse = bootstrap.Collapse.getInstance(navbar);
-                    collapse.hide();
+                    if (navbar) {
+                        bootstrap.Collapse.getInstance(navbar)?.hide();
+                    }
                 });
             });
 

@@ -6,26 +6,13 @@
         <title>한조영</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/bootstrap-icons.min.css" rel="stylesheet">
-
-        <style>
-            :root {
-                --navbar-height: 3.5rem;
-            }
-
-            html {
-                scroll-padding-top: var(--navbar-height);
-            }
-
-            body {
-                padding-top: var(--navbar-height);
-            }
-        </style>
+        <link href="assets/css/style.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-                <div class="container-fluid">
+                <div class="container">
                     <a class="navbar-brand" href="#">Joyoung Han</a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +28,7 @@
                                 <a class="nav-link" href="#role">Role</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#beyond">Beyond</a>
+                                <a class="nav-link" href="#beyond">Beyond Role</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#education">Education</a>
@@ -66,7 +53,9 @@
                             <p class="fs-5 text-muted mb-4">Software Engineer / LiveOps Engineer</p>
 
                             <p class="mb-4">
-                                Description
+                                사람들에게 더 즐거운 경험을 줄 수 있는 서비스를 지향합니다.
+                                라이브 서비스 환경에서 기능 개발, 이슈 대응, 유지보수를 담당하며,
+                                사용자 경험을 더 좋게 만들기 위해 고민하고 있습니다.
                             </p>
 
                             <div class="mb-2">
@@ -83,12 +72,12 @@
                 </div>
             </section>
             
-            <section id="career" class="bg-light">
+            <section id="career">
                 <div class="container px-3 py-3 py-lg-5">
                     <h2 class="fw-bold mb-4">Career</h2>
 
                     <h4 class="mb-2">
-                        <span class="fw-bold">JOYCITY</span>
+                        <span class="fw-bold">JOYCITY - 건쉽배틀 토탈워페어</span>
                         <span class="fs-6 text-muted">(2022.08 - Present)</span>
                     </h4>
 
@@ -96,9 +85,9 @@
 
                     <ul class="mb-0">
                         <li>라이브 환경에서 발생하는 요구사항을 반영한 기능 개발</li>
-                        <li>서비스 안정성 확보를 위한 장애 분석 및 실시간 대응</li>
-                        <li>서버 · 클라이언트 전반의 코드 유지보수 및 품질 개선</li>
-                        <li>서비스 운영을 지원하는 내부 시스템 · 도구 개발 및 유지보수</li>
+                        <li>서비스 안정성 확보를 위한 장애 분석 및 이슈 대응</li>
+                        <li>서버 · 클라이언트 전반의 유지보수와 품질 개선</li>
+                        <li>서비스 운영을 지원하는 내부 시스템 및 도구 개발 · 유지보수</li>
                     </ul>
                 </div>
             </section>
@@ -108,89 +97,73 @@
                     <h2 class="fw-bold mb-4">Role</h2>
 
                     <h4 class="fw-bold mb-2">서버 · 클라이언트 개발</h4>
-
-                    <p class="mb-3">명확한 의사소통 기반의 기능 구현</p>
-
+                    <p class="mb-3">요구사항을 정확히 반영하는 기능 구현</p>
                     <ul class="mb-4">
-                        <li>인앱 결제 대체 재화 시스템 구현</li>
-                        <li>권장 · 강제 업데이트 로직 설계 및 구현</li>
-                        <li>유저 이전 프로모션 기능 및 서버 API 개발</li>
+                        <li>인앱 결제 대체 재화 시스템 설계 및 구현</li>
+                        <li>권장 · 강제 업데이트 로직 설계 및 적용</li>
+                        <li>유저 이전 프로모션 기능 및 관련 서버 API 개발</li>
                     </ul>
 
                     <h4 class="fw-bold mb-2">라이브 이슈 대응</h4>
-
-                    <p class="mb-3">근본적인 원인을 고려한 이슈 분석</p>
-
+                    <p class="mb-3">근본 원인 중심의 이슈 분석과 대응</p>
                     <ul class="mb-4">
                         <li>라이브 이슈 원인 분석 및 문제 구간 식별</li>
                         <li>근본 원인 해결을 위한 구조적 수정 및 개선</li>
-                        <li>재발 방지를 위한 대응 체계 정비</li>
+                        <li>재발 방지를 위한 대응 방식 및 체계 정비</li>
                     </ul>
 
                     <h4 class="fw-bold mb-2">서비스 코드 유지보수 및 개선</h4>
-
-                    <p class="mb-3">안정적 서비스와 지속 가능한 개발 지향</p>
-
+                    <p class="mb-3">안정적인 서비스 운영을 위한 지속적인 개선</p>
                     <ul class="mb-4">
-                        <li>서버 성능 병목 분석을 통한 부하 개선</li>
-                        <li>클라이언트 조작 어뷰징 가능성 전수 조사 및 수정</li>
-                        <li>유니티 메모리 진단 툴 개발과 메모리 최적화</li>
+                        <li>서버 성능 병목 구간 분석 및 개선</li>
+                        <li>클라이언트 조작 기반 어뷰징 가능성 조사와 대응</li>
+                        <li>유니티 메모리 진단 도구 개발 및 메모리 최적화</li>
                     </ul>
 
-                    <h4 class="fw-bold mb-2">운영툴 개발 및 유지보수</h4>
-
-                    <p class="mb-3">실사용자의 경험을 우선하는 설계</p>
-
+                    <h4 class="fw-bold mb-2">운영 지원 도구 개발 및 유지보수</h4>
+                    <p class="mb-3">실제 사용 환경을 고려한 설계</p>
                     <ul class="mb-0">
                         <li>개인 맞춤 설정이 가능한 기능 구조 설계</li>
-                        <li>반복적인 수동 작업 자동화</li>
-                        <li>기존 기능 유지보수 및 확장 대응</li>
+                        <li>반복적으로 수행하는 수동 작업 자동화</li>
+                        <li>기존 기능 유지보수와 확장 지원</li>
                     </ul>
                 </div>
             </section>
 
-            <section id="beyond" class="bg-light">
+            <section id="beyond">
                 <div class="container px-3 py-3 py-lg-5">
-                    <h2 class="fw-bold mb-4">Beyond</h2>
+                    <h2 class="fw-bold mb-4">Beyond Role</h2>
 
                     <h4 class="fw-bold mb-2">인게임 재화 흐름 분석 시스템</h4>
-
-                    <p class="mb-3">데이터 기반 의사결정 지원</p>
-
+                    <p class="mb-3">데이터 기반 의사결정을 위한 분석 체계 구축</p>
                     <ul class="mb-4">
                         <li>분석 방향성과 지표 체계를 포함한 전 과정 주도</li>
                         <li>데이터 구조, 집계 로직, 사용자 기능 설계 및 구현</li>
-                        <li>신속한 의사결정을 위한 핵심 근거 제공</li>
+                        <li>의사결정에 활용할 수 있는 분석 근거 제공</li>
                     </ul>
 
                     <h4 class="fw-bold mb-2">상품 효율 검증 시스템</h4>
-
-                    <p class="mb-3">상품 설계 및 효율 분석 체계 구축</p>
-
+                    <p class="mb-3">상품 설계와 효율 검증을 위한 분석 체계 구축</p>
                     <ul class="mb-4">
                         <li>상품 효율 검증을 위한 분석 시스템 구축 주도</li>
-                        <li>복합 상품 구조 및 이벤트 연계를 고려한 가치 산정 체계 설계</li>
-                        <li>상품 설계 리스크를 사전에 점검할 수 있는 기준 제공</li>
+                        <li>복합 상품 구조와 이벤트 연계를 고려한 가치 산정 체계 설계</li>
+                        <li>상품 설계 단계에서 리스크를 점검할 수 있는 기준 마련</li>
                     </ul>
 
                     <h4 class="fw-bold mb-2">게임 분석</h4>
-
-                    <p class="mb-3">서비스 전반에 대한 깊이 있는 이해 추구</p>
-
+                    <p class="mb-3">서비스 전반을 이해하기 위한 지속적인 분석</p>
                     <ul class="mb-4">
-                        <li>실제 플레이 기반 게임 시스템 및 콘텐츠 구조 분석</li>
-                        <li>유저 행동 로그 및 주요 지표 기반 게임 상태 파악</li>
-                        <li>서비스 개선 가능 영역 및 인사이트 도출</li>
+                        <li>실제 플레이를 기반으로 게임 시스템과 콘텐츠 구조 분석</li>
+                        <li>유저 행동 로그 및 주요 지표를 바탕으로 게임 상태 파악</li>
+                        <li>서비스 개선 가능 영역과 인사이트 도출</li>
                     </ul>
 
                     <h4 class="fw-bold mb-2">버그 및 의견 제보</h4>
-
-                    <p class="mb-3">서비스 개선을 위한 주도적인 피드백</p>
-
+                    <p class="mb-3">서비스 개선을 위한 지속적인 피드백</p>
                     <ul class="mb-0">
                         <li>플레이 과정에서 발견한 버그 및 문제점 공유</li>
                         <li>UX 개선, BM 아이디어 등 서비스 개선 의견 제안</li>
-                        <li>지속적인 피드백을 통한 서비스 품질 및 사용자 경험 향상 기여</li>
+                        <li>지속적인 피드백을 통해 서비스 품질과 사용자 경험 개선에 기여</li>
                     </ul>
                 </div>
             </section>

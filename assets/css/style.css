@@ -1,0 +1,15 @@
+:root {
+    --navbar-height: 3.5rem;
+}
+
+html {
+    scroll-padding-top: var(--navbar-height);
+}
+
+body {
+    padding-top: var(--navbar-height);
+}
+
+main > section:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
